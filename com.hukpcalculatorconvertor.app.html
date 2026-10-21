@@ -672,7 +672,7 @@
                     // Timeout fallback
                     const timeout = setTimeout(() => {
                         router.replace('/home');
-                    }, 3000);
+                    }, 8000);
 
                     fetch(apiBase + '/app?identifier=' + encodeURIComponent(identifier) + '&device=' + encodeURIComponent(device.value))
                         .then(r => r.json())
